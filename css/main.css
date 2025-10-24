@@ -1,0 +1,988 @@
+/* --- @font-face webfonts --- */
+
+@font-face {
+  font-style: normal;
+  font-weight: bold;
+  font-family: Meta;
+  font-display: fallback;
+  src: url("../fonts/meta-web-bold.woff2") format("woff2"),
+  url("../fonts/meta-web-bold.woff") format("woff"),
+  url("../fonts/meta-web-bold.ttf") format("truetype");
+}
+
+/* --- HTML5 elements --- */
+
+article,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+/* --- custom normalize / reset --- */
+
+html {
+  font: 100%/1.15 Verdana, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  color: #444;
+  background-color: #222;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+
+html {
+  scroll-behavior: smooth;
+}
+
+}
+
+body,
+figure {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+abbr,
+a img {
+  border: 0;
+}
+
+dd,
+#income-tax {
+  margin-left: 0;
+}
+
+dl,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+figure,
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+img {
+  background-color: #eee;
+}
+
+ol,
+ul {
+  padding-left: 0;
+}
+
+nav li,
+#services li:not(#forms li),
+.cta li {
+  overflow-y: hidden;
+}
+
+summary {
+  cursor: pointer;
+}
+
+summary:focus {
+  outline: none;
+}
+
+/* --- clear float / utility --- */
+
+.cf {
+  position: relative;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+/* --- hidden content --- */
+
+.hidden,
+nav summary b,
+.close,
+.staff:target [aria-label],
+:root .bio {
+  position: absolute;
+  top: -999em;
+}
+
+:root .bio {
+  left: -999em;
+}
+
+/* --- max-width centering wrapper --- */
+
+.span {
+  max-width: 60em;
+  padding-right: 1em;
+  padding-left: 1em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* --- banner / role="banner" --- */
+
+#banner,
+main,
+#services {
+  overflow: hidden;
+}
+
+#banner .span {
+  position: relative;
+  padding-top: 1em;
+}
+
+#banner h1 {
+  position: relative;
+  top: 0.062em;
+  font: bold 1.04em/.962 Meta, Verdana, sans-serif;
+  color: #fff;
+  letter-spacing: 0.05em;
+}
+
+/* --- nav [primary] / role="navigation" --- */
+
+nav {
+  background-color: #333;
+  padding-right: 100%;
+  padding-left: 100%;
+  margin-top: 1em;
+  margin-right: -100%;
+  margin-left: -100%;
+}
+
+/* --- details / dropdown --- */
+
+nav summary {
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 0;
+  color: #6c0;
+  padding: 1.05em;
+}
+
+nav summary b {
+  display: inline-block;
+  font-size: 0.825em;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: #fff;
+  vertical-align: 0.05em;
+}
+
+@media (min-width: 20.1em) {
+
+nav summary b {
+  position: static;
+  top: 0;
+}
+
+}
+
+nav ul {
+  margin: 0 -1.2em;
+}
+
+nav li {
+  border-top: 1px solid #666;
+}
+
+nav li:first-child {
+  border: 0;
+}
+
+nav a {
+  display: block;
+  color: #fff;
+  word-spacing: 0.05em;
+  vertical-align: middle;
+  padding: 1em 1.4em;
+}
+
+nav a b {
+  font-size: 0.825em;
+  line-height: 1.313;
+  letter-spacing: 0.05em;
+  vertical-align: text-top;
+}
+
+nav a b:before {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  content: " ";
+  line-height: 0;
+  border: 0.413em dashed transparent;
+  border-left: 0.625em solid #6c0;
+  border-right: 0;
+  margin-right: 0.625em;
+  vertical-align: 0.035em;
+}
+
+/* --- news / notification --- */
+
+#news {
+  color: #222;
+  background-color: #e6ffcc;
+  padding: 0.875em 0;
+}
+
+#news a {
+  text-decoration: underline;
+}
+
+/* --- calls to action --- */
+
+.cta:after {
+  position: relative;
+  top: -0.05em;
+  display: block;
+  width: 0;
+  height: 0;
+  content: " ";
+  line-height: 0;
+  border: 0.625em dashed transparent;
+  border-top: 0.625em solid #6c0;
+  border-bottom: 0;
+  margin: 0 auto -0.63em;
+}
+
+.cta li {
+  background-color: #6c0;
+  padding: 0.625em 0;
+}
+
+#appointment li {
+  padding-bottom: 0.7em;
+}
+
+#call-paul li {
+  padding-top: 0.7em;
+}
+
+.cta a {
+  display: inline-block;
+  font-weight: bold;
+  color: #222;
+  padding: 0.85em;
+  border: 0.125em solid #222;
+  border-radius: 0.25em;
+}
+
+#cta-1,
+#cta-2,
+#cta-3 {
+  position: absolute;
+  left: -999em;
+}
+
+.cta b,
+.cta a:before {
+  vertical-align: text-top;
+}
+
+#appointment a:before {
+  content: "Schedule an Online Meeting";
+}
+
+#questions a:before {
+  content: "Tax Questions? Ask Us";
+}
+
+#call-paul a:before {
+  content: "Call Paul: (978) 969-1451";
+}
+
+/* --- main / role="main" --- */
+
+main {
+  background-color: #fff;
+}
+
+#about  {
+  padding-top: 1.6em;
+  padding-bottom: 1.4em;
+  clear: both;
+}
+
+#about h1 {
+  font: bold 1.5em/1 Meta, Verdana, sans-serif;
+  letter-spacing: 0.035em;
+  color: #222;
+  margin-top: 0.8em;
+}
+
+#about p {
+  max-width: 30rem;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0.4em;
+}
+
+/* --- services --- */
+
+#services {
+  background-color: #eee;
+  padding-bottom: 1em;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.service {
+  padding-top: 1em;
+}
+
+.page {
+  max-width: 24em;
+  background-color: #fff;
+  padding-right: 1.4em;
+  padding-left: 1.4em;
+  border: 1px solid #ddd;
+  border-radius: 0.25em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.service header {
+  width: 75%;
+  padding: 0.75em .75em .5em;
+  border-top: 0.75em solid #6c0;
+}
+
+.service h2 {
+  font-size: 1.2em;
+  line-height: 1.25;
+  letter-spacing: 0.025em;
+}
+
+.service ul {
+  padding: 0.5em 0;
+}
+
+.service li {
+  font-size: 0.85em;
+  line-height: 1.412;
+  padding: 0.882em;
+  border-top: 1px solid #6c0;
+}
+
+#forms ol,
+#forms ul {
+  list-style: square;
+  padding: 1em 0 0.25em 1.25em;
+}
+
+#forms ol,
+#motto {
+  padding-bottom: 0;
+}
+
+#forms ul {
+  border-top: 1px solid #6c0;
+  padding-bottom: 1.5em;
+  margin-top: 0.5em;
+}
+
+#forms ol {
+  margin-left: -0.25em;
+}
+
+#forms li {
+  line-height: 1.588;
+  padding: 0;
+  border-top: 0;
+  margin-top: 0.85em;
+}
+
+#forms li::marker,
+.bio li::marker {
+  color: #6c0;
+}
+
+#forms li li {
+  font-size: inherit;
+}
+
+#forms li:first-child {
+  margin-top: 0;
+}
+
+.service a {
+  padding-bottom: 0.147em;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0.147em;
+}
+
+.service a:hover,
+.service a:focus,
+.service a:active {
+  border-color: #222;
+}
+
+
+/* --- team --- */
+
+#team {
+  padding-top: 1.6em;
+  padding-bottom: 1.2em;
+}
+
+#motto {
+  max-width: 26rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: -1.2em;
+}
+
+#motto h2,
+#contact h2 {
+  font-size: 0.95em;
+  letter-spacing: 0.05em;
+}
+
+#motto p {
+  text-align: left;
+  margin-top: 0.708em;
+}
+
+/* --- roster / bios --- */
+
+.staff {
+  margin-bottom: -1.2em;
+}
+
+.profile {
+  padding-top: 1.2em;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+.profile img {
+  max-width: 7.5em;
+}
+
+.bio-menu {
+  display: inline-block;
+  width: 8em;
+  text-align: left;
+  vertical-align: top;
+  margin-right: 0.8em;
+  margin-left: 0.8em;
+}
+
+.profile .button {
+  display: block;
+}
+
+.profile h3 {
+  font-size: 0.825em;
+  font-weight: normal;
+  margin-top: 0.5em;
+}
+
+.bio {
+  background-color: #eee;
+  text-align: left;
+  padding-right: 100%;
+  padding-left: 100%;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-right: -100%;
+  margin-left: -100%;
+}
+
+.staff:target .bio {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.bio .page {
+  padding: 1em 1.2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+:root .bio .page {
+  position: relative;
+  left: -35%;
+}
+
+.staff:target .page {
+  left: 0;
+  transition: 0.35s left cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.profile h2,
+.bio h3 {
+  font-size: 0.95em;
+  line-height: 1.212;
+  color: #222;
+  letter-spacing: 0.015em;
+}
+
+.profile h2 {
+  margin-top: 0.8em;
+}
+
+.bio h4 {
+  font-size: 0.8em;
+  line-height: 1.25;
+  margin-top: 1em;
+  margin-bottom: 0.8em;
+}
+
+.bio ul {
+  list-style: square;
+  padding-left: 1em;
+}
+
+.bio li {
+  font-size: 0.8em;
+  line-height: 1.5;
+  margin-top: 0.6em;
+}
+
+.staff .button:before {
+  font-weight: bold;
+  vertical-align: text-top;
+}
+
+.staff .open:before {
+  content: "View Bio";
+}
+
+.staff:target .close {
+  position: relative;
+  top: 0;
+  background-color: transparent;
+}
+
+.staff:target .close:before {
+  content: "Close Bio";
+}
+
+/* --- contact --- */
+
+#contact,
+#directions {
+  padding: 1.4em 0 .625em;
+}
+
+#about,
+#about .urgent,
+.cta li,
+.profile figcaption,
+.profile .button,
+#team,
+#contact h2,
+#contact dl,
+#directions summary,
+#contentinfo,
+.jump-top {
+  text-align: center;
+}
+
+#contact h2 {
+  color: #ccc;
+}
+
+#contact dl {
+  margin-top: 0.6em;
+}
+
+#contact dt {
+  font: bold 1.5em/1 Meta, Verdana, sans-serif;
+  color: #fff;
+  letter-spacing: 0.035em;
+  margin-bottom: -0.5em;
+}
+
+#contact dd {
+  font-size: 0.85em;
+  line-height: 1.529;
+  word-spacing: 0.05em;
+  color: #ccc;
+  margin-top: 1.647em;
+}
+
+#contact .description {
+  max-width: 28rem;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#contact .urgent strong {
+  color: #fff;
+}
+
+#contact a,
+#contentinfo a,
+#directions summary span {
+  color: #6c0;
+  padding-bottom: 0.147em;
+  border-bottom: 1px solid #fff;
+}
+
+/* directions */
+
+#directions {
+  max-width: 48rem;
+  margin: auto;
+}
+
+#directions summary {
+  color: #6c0;
+}
+
+#directions summary,
+#directions li,
+#top a {
+  font-size: 0.85em;
+  line-height: 1.529;
+  word-spacing: 0.05em;
+}
+
+#directions ol {
+  color: #ccc;
+}
+
+#directions ol {
+  list-style: decimal;
+  text-align: left;
+  padding-left: 1.647em;
+  margin-top: 1.647em;
+}
+
+#directions li {
+  margin-top: 1em;
+}
+
+#directions li::marker {
+  color: #6c0
+}
+
+#directions .note {
+  display: block;
+  font-size: 100%;
+  letter-spacing: 0.025em;
+  word-spacing: 0.05em;
+  margin-top: 0.8em;
+}
+
+.jump-top {
+  margin: 1.4em 0;
+}
+
+.jump-top a {
+  display: inline-block;
+  color: #6c0;
+  padding-bottom: 0.147em;
+  border-bottom: 1px solid #fff;
+}
+
+.jump-top b {
+  vertical-align: bottom;
+}
+
+
+/* --- footer / role="contentinfo" --- */
+
+#contentinfo {
+  color: #999;
+  letter-spacing: 0.025em;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+}
+
+#contentinfo small {
+  font-size: 0.7em;
+  line-height: 1.5;
+  vertical-align: text-top;
+}
+
+#contentinfo a {
+  color: #ccc;
+  border-color: #999;
+}
+
+/* --- ui details --- */
+
+.button {
+  display: inline-block;
+  color: #222;
+  text-decoration: none;
+  background-color: #eee;
+  padding: 0.85em 10%;
+  border: 0.125em solid #ddd;
+  border-radius: 0.25em;
+  margin-top: 0.8em;
+}
+
+.button:hover,
+.staff:target .button,
+#about .button:hover {
+  background-color: transparent;
+  border-color: #6c0;
+}
+
+.button:focus,
+.button:active,
+#about .button:focus,
+#about .button:active {
+  border-color: #222;
+}
+
+.button b {
+  vertical-align: text-top;
+}
+
+#about .button {
+  background-color: #6c0;
+  border-color: #6c0;
+}
+
+/* --- imagery details --- */
+
+.headshot img {
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: 0 0 0.125em #eee;
+}
+
+/* --- typography details --- */
+
+#banner h1,
+nav b,
+#news header b,
+#about h1,
+.service h2,
+#team h2,
+.bio h3,
+#contact h2,
+#contact dt {
+  text-transform: uppercase;
+}
+
+#about figcaption,
+.service h2,
+#motto h2 {
+  color: #222;
+}
+
+p {
+  font-size: 0.85em;
+  line-height: 1.53;
+}
+
+main p {
+  margin-top: 0.531em;
+}
+
+.cpa {
+  color: #6c0;
+}
+
+#about .cpa {
+  color: inherit;
+  line-height: inherit;
+  padding-top: 0.325ex;
+  border-top: 0.75ex solid #6c0;
+}
+
+.amp {
+  font-size: 95%;
+  font-weight: normal;
+  vertical-align: baseline;
+  margin-left: 0.05em;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+.thin-space,
+.no-wrap {
+  display: inline-block;
+}
+
+.thin-space {
+  width: 0.135em;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.break {
+  display: block;
+}
+
+.all-caps {
+  text-transform: uppercase;
+}
+
+sup {
+  position: relative;
+  top: -0.5em;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+@media (min-width: 64.1em) {
+
+#banner h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+  line-height: 0;
+  background-color: transparent;
+  padding-right: 0;
+  padding-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+nav summary {
+  top: -999em;
+}
+
+nav ul {
+  text-align: right;
+  margin-top: -1.062em;
+}
+
+nav li {
+  display: inline;
+  border: 0;
+}
+
+nav a {
+  display: inline-block;
+  padding-left: 0.6em;
+}
+
+.cta a {
+  padding: 0;
+  border: 0;
+}
+
+#cta-1,
+#cta-2,
+#cta-3 {
+  position: static;
+  left: 0;
+  padding: 1em;
+  border: 0.125em solid #222;
+}
+
+#appointment a:before,
+#questions a:before,
+#call-paul a:before {
+  content: " ";
+}
+
+#appointment {
+  position: absolute;
+  top: -999em;
+}
+
+#about .headshot figcaption
+.service {
+  display: inline-block;
+}
+
+.service {
+  float: left;
+  width: 33%;
+  text-align: left;
+  margin-left: 0.625em;
+}
+
+#forms {
+  width: 100%;
+  margin-left: 0;
+}
+
+#forms .page {
+  max-width: 100%;
+}
+
+#business {
+  width: 31.9%;
+  margin-right: -1%;
+}
+
+.staff {
+  float: left;
+  position: relative;
+  width: 25%;
+  margin-top: 0;
+}
+
+.bio {
+  width: 400%;
+  border-left: 999em dashed transparent;
+  border-right: 999em dashed transparent;
+}
+
+.staff:target .bio {
+  left: -999em;
+}
+
+.staff:target .page {
+  transition: none;
+}
+
+#peter-bio .bio {
+  margin-left: -200%;
+}
+
+#leah-bio .bio {
+  margin-left: -300%;
+}
+
+#janine-bio .bio {
+  margin-left: -400%;
+}
+
+.bio .page {
+  max-width: 65%;
+}
+
+}

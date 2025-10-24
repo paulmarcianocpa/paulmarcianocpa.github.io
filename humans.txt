@@ -1,0 +1,31 @@
+# The Humans Responsible & Colophon
+
+- humanstxt.org
+
+- - -
+
+## Authors
+
+- Justin Gagne -- copy, design, and development -- justingagne.design
+- Erinn Kiley -- photography -- erinnkileyphotography.com
+
+## Fonts
+
+- FF Meta Web -- logotype headings
+- Verdana -- body headings & text
+
+## Markup
+
+- HTML, CSS, and JS -- authored in BBEdit
+
+## Tools
+
+- CSSO -- https://css.github.io/csso/csso.html
+- Dev Tools -- https://www.w3.org/developers/tools/
+- ImageOptim -- https://imageoptim.com
+
+- - -
+
+### Make It in Massachusetts
+
+- BBEdit -- http://www.barebones.com/company/

@@ -1,0 +1,10 @@
+@font-face {
+  font-style: normal;
+  font-weight: bold;
+  font-family: Meta;
+  src: url("../fonts/meta-web-bold.eot?#iefix") format("embedded-opentype");
+}
+
+.cf {
+  *zoom: 1;
+}
