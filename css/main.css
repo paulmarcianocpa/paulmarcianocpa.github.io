@@ -35,9 +35,9 @@ html {
 
 @media (prefers-reduced-motion: no-preference) {
 
-html {
-  scroll-behavior: smooth;
-}
+  html {
+    scroll-behavior: smooth;
+  }
 
 }
 
@@ -71,6 +71,7 @@ h6,
 ol,
 ul,
 p {
+  text-wrap: pretty;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -201,10 +202,10 @@ nav summary b {
 
 @media (min-width: 20.1em) {
 
-nav summary b {
-  position: static;
-  top: 0;
-}
+  nav summary b {
+    position: static;
+    top: 0;
+  }
 
 }
 
@@ -845,8 +846,12 @@ main p {
   white-space: nowrap;
 }
 
-.break {
-  display: block;
+@media (min-width: 48em) {
+
+  .break {
+    display: block;
+  }
+
 }
 
 .all-caps {
@@ -863,126 +868,126 @@ sup {
 
 @media (min-width: 64.1em) {
 
-#banner h1 {
-  float: left;
-}
+  #banner h1 {
+    float: left;
+  }
 
-nav {
-  float: right;
-  line-height: 0;
-  background-color: transparent;
-  padding-right: 0;
-  padding-left: 0;
-  margin-top: 0;
-  margin-right: 0;
-  margin-left: 0;
-}
+  nav {
+    float: right;
+    line-height: 0;
+    background-color: transparent;
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
 
-nav summary {
-  top: -999em;
-}
+  nav summary {
+    top: -999em;
+  }
 
-nav ul {
-  text-align: right;
-  margin-top: -1.062em;
-}
+  nav ul {
+    text-align: right;
+    margin-top: -1.062em;
+  }
 
-nav li {
-  display: inline;
-  border: 0;
-}
+  nav li {
+    display: inline;
+    border: 0;
+  }
 
-nav a {
-  display: inline-block;
-  padding-left: 0.6em;
-}
+  nav a {
+    display: inline-block;
+    padding-left: 0.6em;
+  }
 
-.cta a {
-  padding: 0;
-  border: 0;
-}
+  .cta a {
+    padding: 0;
+    border: 0;
+  }
 
-#cta-1,
-#cta-2,
-#cta-3 {
-  position: static;
-  left: 0;
-  padding: 1em;
-  border: 0.125em solid #222;
-}
+  #cta-1,
+  #cta-2,
+  #cta-3 {
+    position: static;
+    left: 0;
+    padding: 1em;
+    border: 0.125em solid #222;
+  }
 
-#appointment a:before,
-#questions a:before,
-#call-paul a:before {
-  content: " ";
-}
+  #appointment a:before,
+  #questions a:before,
+  #call-paul a:before {
+    content: " ";
+  }
 
-#appointment {
-  position: absolute;
-  top: -999em;
-}
+  #appointment {
+    position: absolute;
+    top: -999em;
+  }
 
-#about .headshot figcaption
-.service {
-  display: inline-block;
-}
+  #about .headshot figcaption
+  .service {
+    display: inline-block;
+  }
 
-.service {
-  float: left;
-  width: 33%;
-  text-align: left;
-  margin-left: 0.625em;
-}
+  .service {
+    float: left;
+    width: 33%;
+    text-align: left;
+    margin-left: 0.625em;
+  }
 
-#forms {
-  width: 100%;
-  margin-left: 0;
-}
+  #forms {
+    width: 100%;
+    margin-left: 0;
+  }
 
-#forms .page {
-  max-width: 100%;
-}
+  #forms .page {
+    max-width: 100%;
+  }
 
-#business {
-  width: 31.9%;
-  margin-right: -1%;
-}
+  #business {
+    width: 31.9%;
+    margin-right: -1%;
+  }
 
-.staff {
-  float: left;
-  position: relative;
-  width: 25%;
-  margin-top: 0;
-}
+  .staff {
+    float: left;
+    position: relative;
+    width: 25%;
+    margin-top: 0;
+  }
 
-.bio {
-  width: 400%;
-  border-left: 999em dashed transparent;
-  border-right: 999em dashed transparent;
-}
+  .bio {
+    width: 400%;
+    border-left: 999em dashed transparent;
+    border-right: 999em dashed transparent;
+  }
 
-.staff:target .bio {
-  left: -999em;
-}
+  .staff:target .bio {
+    left: -999em;
+  }
 
-.staff:target .page {
-  transition: none;
-}
+  .staff:target .page {
+    transition: none;
+  }
 
-#peter-bio .bio {
-  margin-left: -200%;
-}
+  #peter-bio .bio {
+    margin-left: -200%;
+  }
 
-#leah-bio .bio {
-  margin-left: -300%;
-}
+  #leah-bio .bio {
+    margin-left: -300%;
+  }
 
-#janine-bio .bio {
-  margin-left: -400%;
-}
+  #janine-bio .bio {
+    margin-left: -400%;
+  }
 
-.bio .page {
-  max-width: 65%;
-}
+  .bio .page {
+    max-width: 65%;
+  }
 
 }
