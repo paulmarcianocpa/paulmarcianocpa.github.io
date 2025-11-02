@@ -728,7 +728,7 @@ main {
 }
 
 #contentinfo small {
-  font-size: 0.7em;
+  font-size: 0.8em;
   line-height: 1.5;
   vertical-align: text-top;
 }
@@ -854,9 +854,7 @@ main p {
 
 }
 
-.all-caps {
-  text-transform: uppercase;
-}
+
 
 sup {
   position: relative;
